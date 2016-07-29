@@ -43,7 +43,7 @@
         frame: resin_toolbar,
         title: process.env.URL_LAUNCHER_TITLE || "RESIN.IO",
         kiosk: true,
-        backgroundColor: "#000000",
+        //backgroundColor: "#000000",
         webPreferences: {
           nodeIntegration: resin_node
         }
@@ -65,6 +65,6 @@
       }
 
       // the big red button, here we go
-      window.loadURL(process.env.URL_LAUNCHER_URL || "file:///app/app/index.html");
+      window.loadURL(`file://${__dirname}/app/index.html`);
   });
 })();
