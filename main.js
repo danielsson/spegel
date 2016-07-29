@@ -43,6 +43,7 @@
         frame: resin_toolbar,
         title: process.env.URL_LAUNCHER_TITLE || "RESIN.IO",
         kiosk: true,
+        backgroundColor: "#000000",
         webPreferences: {
           nodeIntegration: resin_node
         }
