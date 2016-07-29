@@ -1,28 +1,34 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "resin-electronjs",
+  "version": "0.0.3",
+  "description": "electronJS-based rpi resin application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "NODE_ENV=production startx ./node_modules/electron-prebuilt/dist/electron .",
+    "test": "NODE_ENV=development startx ./node_modules/electron-prebuilt/dist/electron ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron/electron-quick-start.git"
+    "url": "git+https://github.com/fwrgit/resin-electronjs.git"
   },
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial"
+    "resin",
+    "io",
+    "electron",
+    "js"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
-  "bugs": {
-    "url": "https://github.com/electron/electron-quick-start/issues"
+  "dependencies": {
+    "electron-prebuilt": "^1.1.3",
+    "electron-rebuild" :"*"
   },
-  "homepage": "https://github.com/electron/electron-quick-start#readme",
-  "devDependencies": {
-    "electron-prebuilt": "^1.2.0"
+  "author": "Carlo Maria Curinga",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/fwrgit/resin-electronjs/issues"
+  },
+  "homepage": "https://github.com/fwrgit/resin-electronjs#readme",
+  "jshintConfig": {
+    "esnext": true,
+    "strict": true
   }
 }
