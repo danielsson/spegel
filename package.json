@@ -19,7 +19,8 @@
   ],
   "dependencies": {
     "electron-prebuilt": "^1.1.3",
-    "electron-rebuild" :"*"
+    "electron-rebuild": "*",
+    "redux": "^3.5.2"
   },
   "author": "Carlo Maria Curinga",
   "license": "Apache-2.0",
