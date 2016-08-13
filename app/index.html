@@ -4,62 +4,28 @@
 <head>
   <meta charset="utf-8">
   <title>Hello World</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    html,
-    body {
-      background-color: black;
-      color: #FFF;
-      font-family: "Helvetica Neue";
-      height: 100%;
-    }
-
-    .frame {
-      border: 4px solid white;
-      margin: 20px;
-      padding: 20px;
-    }
-
-    .inner-frame {
-      #background: rgba(255, 255, 255, 0.09);
-      margin: 40px;
-      padding: 40px;
-    }
-
-    .fill {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
-
-    h2 {
-      font-weight: 100;
-    }
-
-    .dotted {
-      background-image: -webkit-repeating-radial-gradient(center center, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2) 1px, transparent 1px, transparent 100%);
-      background-size: 3px 3px;
-    }
-  </style>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="skeleton.css">
+  <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
-  <script>
-    // You can also require other files to run in this process
-    require('./renderer.js')
-  </script>
+  
 
   <div class="frame fill">
     <div class="inner-frame fill dotted">
-      <h2>32 °C Outside</h2>
+      <div class="container">
+        <div class="row">
+          <div class="offset-by-six six columns">
+            <app></app>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+  <script src="/bundle.js">
+  </script>
 
 </body>
 

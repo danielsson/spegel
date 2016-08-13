@@ -42,7 +42,7 @@
         height: parseInt(process.env.URL_LAUNCHER_HEIGHT || 1080),
         frame: resin_toolbar,
         title: process.env.URL_LAUNCHER_TITLE || "RESIN.IO",
-        kiosk: true,
+        kiosk: resin_kiosk,
         //backgroundColor: "#000000",
         webPreferences: {
           nodeIntegration: resin_node

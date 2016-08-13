@@ -1,0 +1,40 @@
+html,
+body {
+	background-color: black;
+	height: 100%;
+}
+
+.frame {
+	border: 4px solid white;
+	margin: 20px;
+	padding: 20px;
+}
+
+.inner-frame {
+	
+	margin: 40px;
+	padding: 40px;
+}
+
+.fill {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+p, h1, h2, h3, h4 {
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.dotted {
+	background-image: -webkit-repeating-radial-gradient(center center, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2) 1px, transparent 1px, transparent 100%);
+	background-size: 3px 3px;
+}
+
+/*Override skeleton */
+.container {
+  max-width: 111960px;
+}
