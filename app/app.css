@@ -2,6 +2,7 @@ html,
 body {
 	background-color: black;
 	height: 100%;
+	color: white;
 }
 
 .frame {
@@ -38,3 +39,21 @@ p, h1, h2, h3, h4 {
 .container {
   max-width: 111960px;
 }
+
+.text-right {
+	text-align: right;
+}
+
+.ct-series-a .ct-line {
+	/* Set the colour of this series line */
+	stroke: white;
+	/* Control the thikness of your lines */
+	stroke-width: 2px;
+}
+
+
+.ct-label {
+	font-size: 17px;
+	font-family: monospace;
+}
+

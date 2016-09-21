@@ -20,10 +20,12 @@
     "js"
   ],
   "dependencies": {
+    "chartist": "^0.9.8",
     "electron-prebuilt": "^1.1.3",
     "electron-rebuild": "*",
     "redux": "^3.5.2",
-    "vue": "^1.0.26"
+    "vue": "^1.0.26",
+    "vue-resource": "^1.0.2"
   },
   "author": "Carlo Maria Curinga",
   "license": "Apache-2.0",
